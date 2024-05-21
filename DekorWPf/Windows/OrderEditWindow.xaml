@@ -1,0 +1,17 @@
+﻿<Window x:Class="DekorWPf.Windows.OrderEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DekorWPf.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="OrderEditWindow" Height="450" Width="400">
+    <Grid>
+        <ComboBox x:Name="xStatus" Text="{Binding Status_Orders.id_Status}" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Center" Background="#FFA5E887"/>
+        <TextBox x:Name="xKolvo" Text="{Binding Quantity}" HorizontalAlignment="Center" Margin="0,130,0,0" VerticalAlignment="Center" Background="#FFA5E887"/>
+        <TextBox x:Name="xDate" Text="{Binding Date_Delivery}" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Center" Background="#FFA5E887"/>
+        <Button Content="Save" HorizontalAlignment="Center" Margin="0,330,0,0" VerticalAlignment="Center" Background="#FFA5E887"/>
+
+    </Grid>
+</Window>

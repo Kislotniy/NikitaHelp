@@ -1,0 +1,22 @@
+﻿<Window x:Class="DekorWPf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DekorWPf"
+        mc:Ignorable="d" Icon="/Resources/logo.png"
+        Title="Декор" Height="450" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Image VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"  Margin="0,-300,0,0" Source="/Resources/logo.png"/>
+
+        <Label VerticalAlignment="Center" Content="Login:" HorizontalAlignment="Center" Width="200" Height="25" Margin="0,0,0,155" x:Name="LLogin"/>
+        <Label VerticalAlignment="Center" Content="Password:" HorizontalAlignment="Center" Width="200" Height="25" Margin="0,0,0,55" x:Name="LPassword"/>
+        <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="25" Margin="0,0,0,100" x:Name="TBLogin" Background="#FFB3F4E9"/>
+        <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="25" Margin="0,0,0,0" x:Name="TBPassword" Background="#FFB3F4E9"/>
+        <Button VerticalAlignment="Center"  Content="Ok!" HorizontalAlignment="Center" Width="100" Height="25" Margin="0,0,0,-100" x:Name="BLogin" Background="#FFA5E887" Click="BLogin_Click"/>
+        <Button VerticalAlignment="Top"  Content="Войти как гость" HorizontalAlignment="Center" Width="100" Height="25" Margin="0,300,0,0" x:Name="BLogin_Copy" Background="#FFA5E887" Click="BLogin_Copy_Click"/>
+    </Grid>
+</Window>
